@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>dalek cryptography</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="isis agora lovecruft">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+        visibility: hidden;
+      }
+      col-md-4 {
+        width: 31.7%;
+      }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-v2compat.css" rel="stylesheet" >
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">dalek.rs</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="nav-header">LIBRARIES</li>
+                  <li><a href="https://curve25519.dalek.rs">curve25519-dalek</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">PROTOCOLS</li>
+                  <li><a href="https://ed25519.dalek.rs">ed25519-dalek</a></li>
+                  <li><a href="https://x25519.dalek.rs">x25519-dalek</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">TOOLS</li>
+                  <li><a href="#">subtle</a></li>
+                  <li><a href="#">incredible</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav pull-right">
+              <li><a href="https://github.com/dalek-cryptography">Github</a></li>
+              <li><a href="https://publicslack.com/slacks/dalek-cryptography/invites/new">Slack/IRC</a></li>
+              <li><a href="https://lists.dalek.rs">Mailing Lists</a></li>
+            </ul>
+            <!--
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Email">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button>
+            </form>
+            -->
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit col-xs-12 col-sm-10 col-md-8 col-md-offset-2">
+        <h1>dalek</h1>
+        <p>dalek is a suite of cryptographic libraries and protocol
+            implementations, written in the systems programming
+            language Rust, for creating blazingly-fast,
+            production-quality cryptographic applications.
+        </p>
+        <p style="text-align: center"><a href="#" class="btn btn-primary btn-large">Learn&nbsp;more</a></p>
+      </div>
+
+      <br /><p></p><br />
+      <br /><p></p><br />
+
+    </div> <!-- /container -->
+
+    <div class="container-fluid">
+
+      <!-- Example row of columns -->
+      <div class="row col-xs-10 col-sm-12 col-md-12">
+        <div class="col-xs-10 col-sm-6 col-md-4">
+          <h2>curve25519-dalek</h2>
+          <p>A low-level cryptographic library for point, group,
+          field, and scalar operations on a curve isomorphic to the
+          twisted Edwards curve defined by -x²+y² = 1 - 121665/121666
+          x²y² over GF(2²⁵⁵ - 19).
+          </p>
+          <p style="text-align: center"><a class="btn" href="#">API&nbsp;Documentation</a></p>
+          <p style="text-align: center"><a class="btn" href="https://github.com/dalek-cryptography/curve25519-dalek">&nbsp;&nbsp;&nbsp;Source&nbsp;Code&nbsp;&nbsp;&nbsp;</a></p>
+        </div>
+        <div class="col-xs-10 col-sm-6 col-md-4">
+          <h2>ed25519-dalek</h2>
+          <p>A memory-safe, fast, and efficient EdDSA signing and
+          signature verification implementation which supports a
+          well-designed API and friendly error management.
+          </p>
+          <p style="text-align: center"><a class="btn" href="#">API Documentation</a></p>
+          <p style="text-align: center"><a class="btn" href="https://github.com/dalek-cryptography/ed25519-dalek">&nbsp;&nbsp;&nbsp;Source&nbsp;Code&nbsp;&nbsp;&nbsp;</a></p>
+       </div>
+        <div class="col-xs-10 col-sm-6 col-md-4">
+          <h2>x25519-dalek</h2>
+          <p>Elliptic curve Diffie-Hellman key exchange, made so
+          simple-to-use you'll wonder why your application wasn't 
+          using it already. Now with kittens!
+          </p>
+	  <br />
+          <p style="text-align: center"><a class="btn" href="#">API&nbsp;Documentation</a></p>
+          <p style="text-align: center"><a class="btn" href="https://github.com/dalek-cryptography/x25519-dalek">&nbsp;&nbsp;&nbsp;Source&nbsp;Code&nbsp;&nbsp;&nbsp;</a></p>
+        </div>
+      </div>
+
+      </div> <!-- /row container -->
+
+    <div class="container-fluid">
+      <hr>
+      <footer>
+        <p>&copy; All of the Things Inc. 2017</p>
+      </footer>
+    </div>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
