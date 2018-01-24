@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="assets/css/bootstrap-custom.css" rel="stylesheet" media="screen">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -36,7 +37,7 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="0px">
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -84,6 +85,7 @@
       </div>
     </div>
 
+    <section id="home">
     <div class="container-fluid">
 
       <!-- Main hero unit for a primary marketing message or call to action -->
@@ -94,14 +96,20 @@
             language Rust, for creating blazingly-fast,
             production-quality cryptographic applications.
         </p>
-        <p style="text-align: center"><a href="#" class="btn btn-primary btn-large">Learn&nbsp;more</a></p>
+        <p style="text-align: center"><a href="#about" class="btn btn-primary btn-large">Learn&nbsp;more</a></p>
       </div>
 
       <br /><p></p><br />
       <br /><p></p><br />
 
     </div> <!-- /container -->
+    </section>
 
+    <br />
+    <br />
+    <br />
+
+    <section id="projects">
     <div class="container-fluid">
 
       <!-- Example row of columns -->
@@ -136,13 +144,127 @@
           <p style="text-align: center"><a class="btn" href="https://github.com/dalek-cryptography/x25519-dalek">&nbsp;&nbsp;&nbsp;Source&nbsp;Code&nbsp;&nbsp;&nbsp;</a></p>
         </div>
       </div>
+    </div> <!-- /row container -->
+    </section>
 
-      </div> <!-- /row container -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <section id="about">
+    <div class="container-fluid text-center">
+      <hr>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h3>About</h3>
+      <br />
+
+      <div class="row alert alert-block">
+        <div class="col-xs-5 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2">
+          <p>
+          Our <a href="https://curve25519.dalek.rs">curve implementation</a>
+          was created <span class="label">by cryptographers, for cryptographers.</span>  Whether
+          you're a seasoned cryptographic protocol implementer grounded in
+          industry or a grad student prototyping your latest designs, dalek
+          should be safe, easy, and friendly to use, allowing for rapid
+          turnarounds from maths on a chalkboard to production-quality
+          cryptographic implementations.
+          </p>
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-4">
+          <h1>Start prototyping with curve25519-dalek!</h1>
+          <p>
+            Simply add the following to
+            your <span class="label">Cargo.toml</span> to get started:
+          </p>
+          <p>
+            <pre class="pretty-print">
+            [dependencies.curve25519-dalek]
+            version = "1.0"
+            </pre>
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <br/>
+
+    <div class="col-md-6 col-sm-offset-3">
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a class="text-center"
+                 data-toggle="collapse"
+                 data-parent="#accordion" href="#collapseHelp">
+                Start prototyping with curve25519-dalek!
+              </a>
+            </h4>
+          </div>
+          <div id="collapseHelp" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <br/>
+              <br/>
+              <br/>
+              <p>
+                Simply add the following to
+                your <span class="label">Cargo.toml</span> to get started:
+              </p>
+              <p>
+                <pre class="pretty-print">
+                   [dependencies.curve25519-dalek]
+                   version = "1.0"
+                </pre>
+              </p>
+              <br/>
+              <br/>
+              <br/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br />  <!-- lmaoooooooooooooo "webdev" -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
     <div class="container-fluid">
       <hr>
       <footer>
-        <p>&copy; All of the Things Inc. 2017</p>
+        <p>&copy; All of the Things Inc. 2017 — using the excellent
+        BOOTSTRA.386 theme by <a href="https://github.com/kristopolous">Chris McKenzie</a></p>
       </footer>
     </div>
 
